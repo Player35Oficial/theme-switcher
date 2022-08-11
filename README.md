@@ -1,6 +1,8 @@
 # theme-switcher
 
 Desafio Proposto da seção de [Desafios da Rocketseat](https://app.rocketseat.com.br/discover/challenges)
+![Opera Instantâneo_2022-08-11_161859_localhost](https://user-images.githubusercontent.com/85082875/184221743-75e6b9a5-8f52-42a6-8e5c-36c157879e50.png)
+
 
 ## Sobre o Desafio ["Theme Switcher"](https://app.rocketseat.com.br/discover/challenges/theme-switcher)
 Nesse desafio você deverá desenvolver uma página que contenha um toggle para alternar entre o tema dark e light.
