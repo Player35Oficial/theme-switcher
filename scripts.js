@@ -1,6 +1,8 @@
 const html = document.querySelector("html")
 const checkbox = document.getElementById("powerbutton")
 
+/*  Cria função que verificará o estado da preferência de tema, 
+    executando no fim do script */
 const themePrefer = () => {
     html.style.setProperty("--bg", localStorage.getItem("theme"))
     if (checkbox.checked == false && localStorage.getItem("theme") == "#232c35") {
@@ -25,11 +27,11 @@ const darkMode = {
     bg: "#232c35",
 }
 
-/* Cria uma função auxiliar para transformar as chaves dos objetos
+/*  Cria uma função auxiliar para transformar as chaves dos objetos
     caso houvessem letra maiúsculas (reestruturando as sintaxes JS => CSS) */
 const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
 
-/* Cria a função que fará a troca dinâmica de chaves e valores dos objetos
+/*  Cria a função que fará a troca dinâmica de chaves e valores dos objetos
     recebendo colors (nome dos objetos que guardam os temas) */
 const changeColors = (colors) => {
 
@@ -51,4 +53,3 @@ checkbox.addEventListener("change", ({target}) => {
 
 })
 html.onload = themePrefer()
-
